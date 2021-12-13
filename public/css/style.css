@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: acme;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: black;
+    position:fixed;
+    width: 100%;
+    padding: 0;
+}
+
+footer{
+    position: fixed;    
+    bottom: 0;    
+    width: 100%;    
+    height: 25px;    
+    padding-bottom: 16px;    
+    background: #111;    
+    background: rgba(0,0,0,.90);    
+    /*border-top: 2px solid white;    */
+    z-index:2000;    
+    color: white;
+    text-align: center;
+    }
+
+#inicio{    
+    height: 100vh;
+    background:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+} 
+
+#jiujitsu{
+    height: 100vh;
+    background:black;
+    background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#academia{
+    height: 100vh;
+    background:black;
+    background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+
+#tienda{
+    height: 100vh;
+    background:black;
+    background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg");
+    /*display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;*/
+    /*margin: 80px 100px;*/
+    padding-top: 100px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+#examenes{
+    height: 100vh;
+    background:black;
+    background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#ubicacion{
+    height: 100vh;
+    background:black;
+    background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align:center;
+}
+
+#socialmedia{
+    height: 100vh;
+    background:black;
+    background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg");
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo{
+    color:white;
+    font-size: 80px;
+}
+
+.requisitostitulo{
+    color:white;
+    font-size: 30px;
+}
+
+.requisitos{
+    color:white;
+    font-size: 12px;
+}
+
+.tituloubicacion{
+    margin-top: 0px;
+    color:white;
+    font-size: 70px;
+}
+
+.parrafo{
+    color:white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sede{
+    color: white;
+    /* margin: 0 auto; */
+    /* margin-top: 15px; */
+}
+
+.btn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: #5ee91e; /* Color de fondo */
+    padding: 18px 30px; /* Relleno del boton */
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    }
+    .btn-flotante:hover {
+    background-color: #2c2fa5; /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+    }
+    @media only screen and (max-width: 600px) {
+    .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+    }
+    }
+
+.imginicio{
+    width: 593px;
+    height: 355x;
+    margin: 10px auto 20px;
+    display: flex;
+}
+
+.imgfullacademia{
+    width: 400px;
+    height: 200x;
+    margin: 10px auto 20px;
+    display: flex;
+}
+
+.fblogo{
+    width: 320px;
+    height: 200x;
+}
+
+.iglogo{
+    width: 320px;
+    height: 200x;
+}
+
+.logoheader
+{
+    width: 60px;
+    height: 60x;
+    margin-bottom: 10px;
+}
+
+.imgcarta
+{
+    width: 120px;
+    height: 60x;
+    margin-bottom: 10px;
+}
+
+.carta{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    border: solid 2px;
+    text-align: center;
+}
+
+.cartasmaps{
+     /* height: 250px; */
+    width: 100%;
+     /* margin-top: 0px;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+} 
+
+.pcarta{
+    color: white;
+}
+
+.acarta{
+    color: white;
+}
+
+@media (max-width: 360px) {
+    #inicio{    
+        height: 50vh;
+        background:black;
+        /* display: flex; */
+        /* flex-direction: column;
+        justify-content: center; */
+        /* text-align: center;  */
+    } 
+
+    .imginicio {
+        height: 300x;
+        width: 300px;                
+        /* margin: 10px auto 20px; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+
+    #jiujitsu{
+        height: 120vh;                
+        background-image:none;
+    }
+
+    .titulo{
+        /* color:white; */
+        font-size: 50px;
+    }
+
+    .tituloubicacion{
+        margin-top: 50px;
+        /* color:white; */
+        font-size: 50px;
+    }
+
+    .parrafo{
+        max-width: 300px;                
+    } 
+
+    .imgfullacademia{
+        width: 200px;
+        height: 100x;
+        /* margin: 10px auto 20px;
+        display: flex; */
+    }        
+
+    #examenes{
+        height: 100vh;
+        background:black;
+        /* background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg"); */
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; */
+    }
+
+    #ubicacion{
+        height: 100vh;
+        background:black;
+        /* background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg"); */
+        /* display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align:center; */
+    }
+
+    #tienda{
+        height: 100%;
+        background:black;
+        /* background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg"); */
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding-left: 60px;        
+    }
+
+    #academia{
+        height: 100vh;
+        background:black;
+    }
+
+    .cartasmaps{                
+        width: 100%;
+        margin-top: 100px;
+        display:inline;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }  
+
+    iframe {
+        max-width: 80%;
+        height: auto;
+    }
+
+    #socialmedia{
+        /* height: 0vh; */
+        background:black;
+        /* background-image: url("https://adwebsys.info/img/adwebsys-fondo.jpg"); */
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;              
+    }
+
+    .fblogo{
+        width: 200px;
+        height: 200x;
+    }
+        
+    .iglogo{
+        width: 200px;
+        height: 200x;
+    }
+
+    .youlogo{
+        width: 200px;
+        height: 200x;
+    }
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    }
+    
+    .topnav a {
+    float: left;
+    display: block;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+    
+    .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+    .topnav a.active {
+    background-color: darkblue;
+    color: white;
+    }
+
+    .topnav .icon {
+    display: none;
+    }
+    
+    @media screen and (max-width: 600px){
+    /* @media (max-width: 359px)  { */
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    }
+    
+    @media screen and (max-width: 600px) {
+    /* @media (max-width: 359px) { */
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    }
